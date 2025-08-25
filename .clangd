@@ -1,0 +1,10 @@
+Diagnostics:
+  ClangTidy:
+    Add: [performance*, modernize*, readability*]
+    Remove: [performance-enum-size, readability-magic-numbers, readability-function-cognitive-complexity]
+    CheckOptions:
+      readability-identifier-naming.VariableCase: lower_case
+  UnusedIncludes: Strict
+CompileFlags:
+  Add: ['-std:c++latest', '-Wno-unknown-warning-option']
+  Remove: [-m*, -f*]
