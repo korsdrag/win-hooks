@@ -3,14 +3,21 @@
 #include <string>
 
 #include <Windows.h>
+#include <minwindef.h>
+#include <windef.h>
 #include <winuser.h>
+
+#include "utils/formatter.h"
+
+namespace win
+{
 
 /**
  * Enumeration of keyboard keys. Incomplete.
  */
 enum class Key
 {
-    ESC   = 0x1b,
+    ESC   = VK_ESCAPE,
     A     = 0x41,
     B     = 0x42,
     C     = 0x43,
@@ -118,4 +125,6 @@ inline auto to_string(KeyState obj) -> std::string
         case DOWN: return "DOWN";
         default:   return "UNKNOWN STATE";
     }
+}
+
 }

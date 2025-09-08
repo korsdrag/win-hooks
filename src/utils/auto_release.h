@@ -3,7 +3,7 @@
 #include <functional>
 #include <ranges>
 
-namespace winhook
+namespace win
 {
 
 /**

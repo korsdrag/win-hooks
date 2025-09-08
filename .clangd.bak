@@ -5,9 +5,6 @@ Diagnostics:
     CheckOptions:
       readability-identifier-naming.VariableCase: lower_case
   UnusedIncludes: Strict
-  Includes:
-    IgnoreHeader: ['formatter\.h']
-  MissingIncludes: Strict
 CompileFlags:
-  Add: ['-Wno-unknown-warning-option']
+  Add: ['-std:c++latest', '-Wno-unknown-warning-option']
   Remove: [-m*, -f*]
